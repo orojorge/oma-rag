@@ -105,7 +105,7 @@ make dev-frontend # http://localhost:3000
 
 ## Deployment
 
-The live demo runs on AWS (OpenSearch Service, Lambda Function backend, Vercel frontend). Deployment configuration is kept private — see the architecture above for the component breakdown.
+The live demo runs on AWS (OpenSearch Service and Lambda Function backend) and Vercel (frontend). Deployment configuration is kept private — see the architecture above for the component breakdown.
 
 Any equivalent stack works: hosted OpenSearch or Elasticsearch for the index, any Python host for the backend, Vercel or Netlify for the frontend.
 
