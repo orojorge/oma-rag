@@ -56,7 +56,6 @@ python cli.py
 OPENAI_BASE_URL=https://api.openai.com/v1
 OPENAI_API_KEY=...
 OPENSEARCH_HOST=http://localhost:9200
-AWS_REGION=eu-central-1    # only required for AWS OpenSearch deployment
 ```
 
 ---

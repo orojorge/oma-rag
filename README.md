@@ -24,7 +24,7 @@ Query → Planner → Normalizer → Retrieval → Fusion → Synthesizer → Va
 
 - **Planner** (`gpt-4o-mini`): Interprets the query and produces a structured search plan
 - **Normalizer**: Expands filter values using a domain vocabulary and alias map
-- **Retrieval** (`text-embedding-3-small`): Runs parallel structured field queries (metadata filters) and kNN embedding searches against OpenSearch
+- **Retrieval** (`text-embedding-3-small`): Runs structured field queries (metadata filters) and kNN embedding searches against OpenSearch
 - **Fusion**: Merges and re-ranks results from both retrieval paths
 - **Synthesizer** (`gpt-4.1-mini`): Streams a cited answer grounded in retrieved chunks
 - **Validator**: Post-processes and validates the final response
@@ -105,7 +105,7 @@ make dev-frontend # http://localhost:3000
 
 ## Deployment
 
-The live demo runs on AWS (OpenSearch Service, EC2 backend, Vercel frontend). Deployment configuration is kept private — see the architecture above for the component breakdown.
+The live demo runs on AWS (OpenSearch Service, Lambda Function backend, Vercel frontend). Deployment configuration is kept private — see the architecture above for the component breakdown.
 
 Any equivalent stack works: hosted OpenSearch or Elasticsearch for the index, any Python host for the backend, Vercel or Netlify for the frontend.
 

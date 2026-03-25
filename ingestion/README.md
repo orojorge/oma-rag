@@ -42,12 +42,24 @@ After `parser.py` and `extract_specs.py`, review the output before continuing. T
 
 ---
 
-## Run
+## Quick Start
+
+### 1. Install dependencies
 
 ```bash
 pip install -r ingestion/requirements.txt
+```
+
+### 2. Download data
+
+```bash
 curl -L https://paraclet.s3.eu-central-1.amazonaws.com/oma.zip -o oma.zip
 unzip oma.zip -d ingestion/data
+```
+
+### 3. Run
+
+```bash
 make ingest
 # or manually:
 cd ingestion
