@@ -1,0 +1,6 @@
+beautifulsoup4
+pycountry
+openai
+tqdm
+python-dotenv
+requests

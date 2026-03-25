@@ -1,0 +1,250 @@
+.container {
+  /* border: 2px solid yellowgreen; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+
+/* - - - - - - - - - - TOP BAR - - - - - - - - - -*/
+.topBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--background);
+  display: grid;
+  grid-template-columns: 1fr minmax(80px, 768px) 1fr;
+  align-items: center;
+  padding: 20px 16px;
+  border-bottom: 1px solid var(--foreground);
+  gap: 32px;
+  /* border: 2px solid yellowgreen; */
+}
+
+.branding {
+  /* border: 1px solid yellowgreen; */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 1000;
+  letter-spacing: -0.04em;
+  user-select: none;
+  white-space: nowrap;
+  width: 96px;
+  line-height: 1;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border: 1px solid;
+  border-color: var(--foreground-search);
+  padding-left: 12px;
+  padding-right: 8px;
+  background-color: white;
+  color: black;
+  gap: 8px;
+}
+
+.inputWrap {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.searchBox input {
+  position: relative;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  margin-right: 8px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonsContainer button {
+  height: 22px;
+  width: 22px;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.imgIcon {
+  background: rgba(0, 0, 0, 0) url("/cancel.svg") no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.iconsContainer{
+  /* border: 2px solid yellowgreen; */
+  justify-self: end;
+  justify-content: right;
+  display: flex;
+  width: 26px;
+}
+
+.themeIcon {
+  justify-self: end;
+  border: 1px solid;
+  border-color: var(--foreground);
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  background:
+    linear-gradient(
+      to right,
+      var(--background-icon) 50%,
+      var(--foreground-icon) 50%
+    );
+}
+
+
+/* - - - - - - - - - - CONTENT - - - - - - - - - - */
+.content {
+  /* border: 2px solid yellowgreen; */
+  padding: 64px 8px 0px 12px;
+  max-width: 768px;
+  min-width: 80px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.citation{
+  font-size: 12px;
+  padding: 0px 4px;
+  background-color: var(--foreground);
+  color: var(--background);
+}
+
+.loading {
+  color: var(--foreground);
+  opacity: 0.6;
+}
+
+.error {
+  color: #c00;
+  white-space: pre-wrap;
+}
+
+.answer {
+  white-space: pre-wrap;
+}
+
+.warnings {
+  margin-top: 24px;
+}
+
+.warning {
+  padding: 8px 0px;
+  padding-left: 9px;
+  border-left: 3px solid #c90;
+  opacity: 0.6;
+}
+
+.citations {
+  margin-top: 64px;
+  border-top: 1px solid var(--foreground);
+  /* border: 1px solid blue; */
+}
+
+.citationsTitle {
+  font-weight: 600;
+  margin: 8px 0px;
+}
+
+.citations ul {
+  /* list-style: decimal inside; */
+  list-style-type: none;
+  padding-left: 12px;
+}
+
+.info {
+  display: flex;
+  margin: 0px 16px 16px 0px;
+  justify-content: end;
+  text-decoration-line: underline;
+  margin-top: auto;
+}
+
+
+/* - - - - - - - - - - DIALOG - - - - - - - - - - */
+.dialog {
+  width: 620px;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px;
+
+  position: fixed;
+  border-radius: 0;
+  border: 1px solid;
+  border-color: var(--foreground);
+  background-color: var(--background);
+}
+
+.dialog a {
+  text-decoration: underline;
+}
+
+dialog[open].dialog {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0);
+}
+
+
+/* - - - - - - - - - - MOBILE - - - - - - - - - - */
+@media (max-width: 768px) {
+  .topBar {
+    padding: 20px 12px;
+    gap: 12px;
+  }
+
+  .branding {
+    font-size: 32px;
+    width: 78px;
+  }
+
+  .inputWrap input {
+    font-size: 16px;
+    transform: scale(0.8125);
+    transform-origin: left center;
+  
+    width: calc(100% / 0.8125);
+    display: block;
+    box-sizing: border-box;
+    /* background-color: aquamarine; */
+  }
+
+  .content {
+    padding: 64px 12px;
+    font-size: 13px;
+  }
+
+  .info {
+    font-size: 13px;
+  }
+
+  .dialog {
+    width: calc(100% - 64px);
+    max-width: 480px;
+    max-height: 80%;
+    font-size: 13px;
+    padding: 16px;
+  }
+}

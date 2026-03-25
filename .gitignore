@@ -1,0 +1,31 @@
+# Environments
+venv/
+.env
+.env.local
+
+# LLM context
+context/
+.claude/
+.codex/
+.clauderc
+
+# Python
+__pycache__/
+
+# AWS deployment (private)
+deploy/aws/
+.aws-sam/
+
+# Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/.vercel/
+
+# Data
+ingestion/data/*
+ingestion/artifacts/*
+*.zip
+*backup/
+
+# OS
+.DS_Store

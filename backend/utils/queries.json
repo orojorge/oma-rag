@@ -1,0 +1,40 @@
+{
+  "queries": {
+    "structured": {
+      "no_filters": [
+        "completed projects"
+      ],
+      "filters": {
+        "status": "How many projects are in competition status?",
+        "city": "List of projects in Paris.",
+        "country": "How many projects are in China?",
+        "year": "Show projects from 1995 to 2005.",
+        "title": "Who is the main partner of the 'CCTV' project?",
+        "country, program": "List exhibition projects in France.",
+        "is_ongoing": "List OMA's ongoing projects.",
+        "partner": [
+          "Projects that Rem Koolhaas is part of.",
+          "Projects that Rem Koolhaas and Chris van Duijn are part of."
+        ],
+        "clients": "List of projects with the Academie de Paris as a client."
+      },
+      "normalization": {
+        "city": "Give me a timeline of OMA projects in NYC.",
+        "country": "Did OMA built in the UK?"
+      }
+    },
+    "vector": [
+        "Explain the design approach behind the project 'Zeebrugge Sea Terminal'",
+        "Compare 'Seattle Central Library' and 'Casa da Musica'.",
+        "Did Rem Koolhaas lead the 'Feyenoord Stadium' project?",
+        "Write a poem based on the project 'Casa Palestra'"
+      ],
+    "hybrid": [
+      "Which projects were built in China, and what is special about them?",
+      "Give me the basics on the 'Zardun' project.",
+      "A sphere with a cone.",
+      "List residential projects from the 1990s, and explain what's special about them."
+    ]
+  },
+  "notes": ""
+}
