@@ -2,7 +2,7 @@
 
 A retrieval-augmented generation system for querying the OMA project archive. The corpus combines structured metadata (location, typology, client, year) with unstructured descriptive text scraped from [oma.com/projects](http://www.oma.com/projects). Every answer is grounded in retrieved source and includes citations.
 
-**Live demo:** [oma.paraclet.io](http://oma.paraclet.io)
+**Live demo:** [oma-rag.vercel.app](https://oma-rag.vercel.app/)
 
 ![OMA-RAG interface](./docs/screenshot.png)
 
