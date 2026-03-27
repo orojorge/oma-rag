@@ -195,9 +195,9 @@ function RagContent() {
             <br/><br/>All factual statements are supported by citations. If the archive does not contain enough information, the app will say so.
             <br/><br/>This is not a conversational system. Each query is handled independently.
             <br/><br/>Example questions:
-            <br/><br/>&nbsp;&nbsp;• <a href="https://oma.paraclet.io/rag?q=Explain%20the%20design%20approach%20behind%20the%20Mushroom%20Pavilion" rel="noopener noreferrer">Explain the design approach behind the Mushroom Pavilion</a>
-            <br/>&nbsp;&nbsp;• <a href="https://oma.paraclet.io/rag?q=List%20residential%20projects%20in%20the%20Netherlands%20in%20the%201990s" rel="noopener noreferrer">List residential projects in the Netherlands in the 1990s</a>
-            <br/>&nbsp;&nbsp;• <a href="https://oma.paraclet.io/rag?q=What%20is%20the%20residential%20project%20in%20France%20with%20an%20elevator%20platform%3F" rel="noopener noreferrer">What is the residential project in France with an elevator platform?</a>
+            <br/><br/>&nbsp;&nbsp;• <a href="/rag?q=Explain%20the%20design%20approach%20behind%20the%20Mushroom%20Pavilion" rel="noopener noreferrer">Explain the design approach behind the Mushroom Pavilion</a>
+            <br/>&nbsp;&nbsp;• <a href="/rag?q=List%20residential%20projects%20in%20the%20Netherlands%20in%20the%201990s" rel="noopener noreferrer">List residential projects in the Netherlands in the 1990s</a>
+            <br/>&nbsp;&nbsp;• <a href="/rag?q=What%20is%20the%20residential%20project%20in%20France%20with%20an%20elevator%20platform%3F" rel="noopener noreferrer">What is the residential project in France with an elevator platform?</a>
             <br/><br/>Powered by <a href="https://paraclet.io" target="_blank" rel="noopener noreferrer">Paraclet</a>, 2026.
           </p>
       </dialog>
